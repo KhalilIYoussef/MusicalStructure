@@ -18,8 +18,9 @@ public class PaymentActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_nav_current_song:
+        switch (item.getItemId())
+        {
+            case R.id.action_nav_song:
                 Intent intentSong = new Intent(PaymentActivity.this, SongActivity.class);
                 startActivity(intentSong);
                 return true;

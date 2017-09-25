@@ -18,14 +18,17 @@ public class SongActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song);
 
-        ImageButton buttonPrevious = (ImageButton) findViewById(R.id.songPrevious);
+        ImageButton buttonPrevious = (ImageButton) findViewById(R.id.songLast);
+
         buttonPrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(v.getContext(), "Play last song", Toast.LENGTH_SHORT).show();
             }
         });
+
         ImageButton buttonPlay = (ImageButton) findViewById(R.id.songPlay);
+
         buttonPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,6 +37,7 @@ public class SongActivity extends AppCompatActivity {
             }
         });
         ImageButton buttonNext = (ImageButton) findViewById(R.id.songNext);
+
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,8 +55,9 @@ public class SongActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_nav_library:
+        switch (item.getItemId())
+        {
+            case R.id.action_nav_library :
                 Intent intentLibrary = new Intent(SongActivity.this, LibraryActivity.class);
                 startActivity(intentLibrary);
                 return true;

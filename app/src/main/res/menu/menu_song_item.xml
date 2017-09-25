@@ -6,12 +6,12 @@
 
     <item
         android:id="@+id/action_nav_library"
-        android:title="@string/category_library"
+        android:title="@string/menu_library"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_nav_payment"
-        android:title="@string/category_payment"
+        android:title="@string/menu_payment"
         app:showAsAction="never" />
 
 </menu>

@@ -5,13 +5,13 @@
     tools:context="com.example.android.musicalstructure.activity.PaymentActivity">
 
     <item
-        android:id="@+id/action_nav_current_song"
-        android:title="@string/category_current_song"
+        android:id="@+id/action_nav_song"
+        android:title="@string/menu_song"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_nav_library"
-        android:title="@string/category_library"
+        android:title="@string/menu_library"
         app:showAsAction="never" />
 
 </menu>

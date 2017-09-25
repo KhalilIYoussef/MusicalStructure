@@ -21,13 +21,13 @@ public class LibraryActivity extends AppCompatActivity {
             setContentView(R.layout.activity_library);
 
             ArrayList<Song> songs = new ArrayList<Song>();
-            songs.add(new Song("Example Song 1", "Example Artist 1", "Example Album 1"));
-            songs.add(new Song("Example Song 2", "Example Artist 2", "Example Album 2"));
-            songs.add(new Song("Example Song 3", "Example Artist 3", "Example Album 3"));
-            songs.add(new Song("Example Song 4", "Example Artist 4", "Example Album 4"));
+            songs.add(new Song("Song 1", "Artist 1", "Album 1"));
+            songs.add(new Song("Song 2", "Artist 2", "Album 2"));
+            songs.add(new Song("Song 3", "Artist 3", "Album 3"));
+            songs.add(new Song("Song 4", "Artist 4", "Album 4"));
 
             SongAdapter adapter = new SongAdapter(this, songs);
-            RecyclerView songList = (RecyclerView) findViewById(R.id.list);
+            RecyclerView songList = (RecyclerView) findViewById(R.id.songList);
             songList.setAdapter(adapter);
         }
 
@@ -38,9 +38,10 @@ public class LibraryActivity extends AppCompatActivity {
         }
 
         @Override
-        public boolean onOptionsItemSelected (MenuItem item){
+        public boolean onOptionsItemSelected (MenuItem item)
+        {
             switch (item.getItemId()) {
-                case R.id.action_nav_current_song:
+                case R.id.action_nav_song:
                     Intent intentSong = new Intent(LibraryActivity.this, SongActivity.class);
                     startActivity(intentSong);
                     return true;
