@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/activity_current_song_details" />
+
+    <ImageButton
+        android:id="@+id/songPrevious"
+        style="@style/MediaControls"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+    <ImageButton
+        android:id="@+id/songPlay"
+        style="@style/MediaControls"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ImageButton
+        android:id="@+id/songNext"
+        style="@style/MediaControls"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@android:drawable/ic_media_next" />
+
+</RelativeLayout>
