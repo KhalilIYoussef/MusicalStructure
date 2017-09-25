@@ -3,8 +3,11 @@
     <string name="menu_song">Playing</string>
     <string name="menu_library">Go to Library</string>
     <string name="menu_payment">Go to Payment</string>
-    <string name="payment_details">Google Pay API can be used to process payment.</string>
+    <string name="payment_details">Android Pay API can be used in this activity to process payment.</string>
     <string name="song_details">This activity controls the current song playing. It will use Android Media Player to play songs.</string>
     <string name="library_details">List of songs that the user has added.</string>
+    <string name="song_activity">Song Activity</string>
+    <string name="library_activity">Library Activity</string>
+    <string name="payment_activity">Payment Activity</string>
 
 </resources>
