@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.musicalstructure.activity.PaymentActivity">
+
+    <item
+        android:id="@+id/action_nav_current_song"
+        android:title="@string/category_current_song"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_nav_library"
+        android:title="@string/category_library"
+        app:showAsAction="never" />
+
+</menu>
