@@ -1,13 +1,16 @@
-package khaliliyoussef.musicalstructure;
+package khaliliyoussef.musicalstructure.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LibraryActivity extends AppCompatActivity {
+import khaliliyoussef.musicalstructure.R;
+
+public class SongActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_library);
+        setContentView(R.layout.activity_song);
     }
+
 }
