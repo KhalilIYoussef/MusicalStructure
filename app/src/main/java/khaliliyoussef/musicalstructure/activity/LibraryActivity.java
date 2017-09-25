@@ -6,9 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import java.util.ArrayList;
-
 import khaliliyoussef.musicalstructure.R;
 import khaliliyoussef.musicalstructure.adapter.SongAdapter;
 import khaliliyoussef.musicalstructure.model.Song;

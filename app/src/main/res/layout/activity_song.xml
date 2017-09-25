@@ -5,26 +5,38 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/songDescription"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/song_details"
-        />
+        android:text="@string/song_details" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        android:scrollbarSize="16dp"
+        android:layout_above="@+id/songLast"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp" />
 
     <ImageButton
         android:id="@+id/songLast"
         style="@style/MediaControl"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="30dp"
-        app:srcCompat="@android:drawable/ic_media_previous"
-        />
+        app:srcCompat="@android:drawable/ic_media_previous" />
 
 
     <ImageButton
         android:id="@+id/songPlay"
         style="@style/MediaControl"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@android:drawable/ic_media_play"
-        />
+        app:srcCompat="@android:drawable/ic_media_play" />
 
 
     <ImageButton
@@ -32,7 +44,6 @@
         style="@style/MediaControl"
         android:layout_alignParentRight="true"
         android:layout_marginRight="30dp"
-        app:srcCompat="@android:drawable/ic_media_next"
-        />
+        app:srcCompat="@android:drawable/ic_media_next" />
 
 </RelativeLayout>
