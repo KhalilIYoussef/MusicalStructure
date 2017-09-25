@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Musical Structure</string>
-    <string name="category_current_song">Now Playing</string>
-    <string name="category_library">Library</string>
-    <string name="category_payment">Payment</string>
-    <string name="activity_payment_details">Android Pay API can be used in this activity to process payment.</string>
+    <string name="category_current_song">Playing</string>
+    <string name="category_library">Go to Library</string>
+    <string name="category_payment">Go to Payment</string>
+    <string name="activity_payment_details">Google Pay API can be used to process payment.</string>
     <string name="activity_current_song_details">This activity controls the current song playing. It will use Android Media Player to play songs.</string>
-    <string name="activity_library_details">This activity lists all the songs that the user has added.</string>
+    <string name="activity_library_details">List of songs that the user has added.</string>
 
 </resources>

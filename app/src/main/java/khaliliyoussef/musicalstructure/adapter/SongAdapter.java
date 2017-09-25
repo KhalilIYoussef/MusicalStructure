@@ -38,18 +38,9 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.MovieViewHolde
             songTitle = v.findViewById(R.id.song_title);
             songArtist = v.findViewById(R.id.song_artist);
             songAlbum = v.findViewById(R.id.song_album);
-            v.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int position = getAdapterPosition();
-                    if (position != RecyclerView.NO_POSITION) {
-                        Song ClickDataItems = songs.get(position);
-//                        Intent intent = new Intent(context, DetailsActivity.class);
-//                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                        context.startActivity(intent);
-                    }
-                }
-            });
+
+
+
         }
     }
 

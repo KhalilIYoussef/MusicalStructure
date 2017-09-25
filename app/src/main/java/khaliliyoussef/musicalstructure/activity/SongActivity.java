@@ -22,21 +22,23 @@ public class SongActivity extends AppCompatActivity {
         buttonPrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "Play previous song", Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), "Play last song", Toast.LENGTH_SHORT).show();
             }
         });
         ImageButton buttonPlay = (ImageButton) findViewById(R.id.songPlay);
         buttonPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "Play/pause song", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(v.getContext(), "Play or pause song", Toast.LENGTH_SHORT).show();
             }
         });
         ImageButton buttonNext = (ImageButton) findViewById(R.id.songNext);
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "Play next song", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(v.getContext(), "Play the next song", Toast.LENGTH_SHORT).show();
             }
         });
     }
